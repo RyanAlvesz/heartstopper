@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 200px;
+    background-image: url(./img/nick-e-charlie-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 70px 24px 70px;
+    font-family: 'Righteous', cursive;
+}
+
+header{
+    height: 100px;
+}
+
+.opcoes{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+main{
+    display: flex;
+
+}
+
+.container-esquerdo {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    justify-content: space-evenly;
+
+    
+}
+
+.container-direito{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+.logo__serie{
+    
+}
+
+
+.description__text{
+    font-size: 35px;
+    width: 1000px;
+    color: white;
+    text-align: justify;
+    place-self: end start;
+    
+}
+
+.logo__apps{
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    
+}
+
