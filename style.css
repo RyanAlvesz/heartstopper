@@ -29,49 +29,50 @@ header{
 }
 
 main{
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 1fr 100px;
 }
 
 .container-esquerdo {
-    display: flex;
-    flex-direction: column;
-    column-gap: 20px;
-    justify-content: space-evenly;
-
-    
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
-
-.container-direito{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-    width: 40%;
-}
-
 
 .logo__serie{
-    
+    display: grid;
+    place-content: center start;
 }
 
+.logo__serie img {
+    width: 700px;
+    padding-left: 100px;
+}
 
 .description__text{
     font-size: 35px;
     width: 1000px;
     color: white;
     text-align: justify;
-    place-self: end start;
+    justify-content: center;
+    
+}
+
+.container-direito{
+    display: grid;
     
 }
 
 .logo__apps{
-    position: relative;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+
+    display: grid;
+    place-content: center;
+    gap: 24px;
+  
+}
+
+.logo__apps a {
+    display: grid;
+    place-items: center;
 }
 
 .videos{
