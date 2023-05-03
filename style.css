@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     display: grid;
-    grid-template-rows: 50px 1fr 200px;
+    grid-template-rows: 100px 1.5fr 0.5fr;
     background-image: url(./img/nick-e-charlie-fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,13 +16,9 @@ body{
     font-family: 'Righteous', cursive;
 }
 
-header{
-    height: 100px;
-}
-
 .opcoes{
     display: flex;
-    font-size: 25px;
+    font-size: 1.5em;
     align-items: center;
     gap: 50px;
     color: white;
@@ -35,22 +31,17 @@ main{
 
 .container-esquerdo {
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    align-items: center;
 }
 
-.logo__serie{
-    display: grid;
-    place-content: center start;
-}
-
-.logo__serie img {
+img[alt~=logo-serie] {
     width: 700px;
-    padding-left: 100px;
+    padding-left: 5%;
 }
 
 .description__text{
-    font-size: 35px;
-    width: 1000px;
+    font-size: 1.9em;
+    width: 50%;
     color: white;
     text-align: justify;
     justify-content: center;
@@ -73,6 +64,16 @@ main{
 .logo__apps a {
     display: grid;
     place-items: center;
+}
+
+.logo:hover{
+    transition-duration: 1ms;
+    transform: scale(1.2);
+}
+
+footer{
+    display: flex;
+    align-items: center;
 }
 
 .videos{
